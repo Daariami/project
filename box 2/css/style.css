@@ -1,0 +1,115 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+body{
+	background-color: #F0FFF0;
+	padding: 30px;
+}
+
+.content{
+	max-width: 800px;
+	margin: 70px 0px 0px 350px;
+}
+.head li:before{
+content: url('../img/check.png');
+display: inline-block;
+padding: 0px 0px 10px 0px;
+}
+.head{
+	text-transform: capitalize;
+}
+.head ul:nth-child(1){
+margin: 0px 0px 40px 0px;
+}
+.head1 li:nth-child(1){
+	text-decoration: line-through;
+}
+.head1 li:nth-child(2){
+	font-weight: 700;
+}
+.head1 li:nth-child(3){
+	font-style: italic;
+}
+.head1 li:nth-child(4){
+	text-transform: uppercase;
+}
+.head2{
+	margin: 0px 0px 30px 0px;
+}
+.head2 li:nth-child(2):hover{
+	color: #BA55D3;
+	font-size: 20px;
+}
+.head2 li:nth-child(2):hover:before{
+   content: url('../img/li.svg')
+}
+a{
+	background-color: #4B0082;
+	display: inline-block;
+	padding: 10px;
+	border-radius: 50%;
+	box-shadow: 0px 4px 5px 0px #696969;
+}
+a:hover{
+	background-color: #483D8B;
+}
+a:active{
+	background-color: #6A5ACD;
+	box-shadow: 0px 0px 0px 0px ;
+	position: relative;
+	top: 4px;
+}
+span{
+	color: #E6E6FA;
+	font-size: 20px;
+	font-family: arial;
+	letter-spacing: 2.8;
+	text-transform: uppercase;
+}
+span:after{
+	content: url('../img/arrow.svg');
+	padding: 0px 0px 0px 10px;
+}
+.footer p{
+	padding: 30px 0px 0px 0px;
+}
+
+.footer p:first-child:first-line{
+	color: red;
+}
+.footer p:nth-child(2):first-letter{
+	color: red;
+	font-size: 30px;
+}
